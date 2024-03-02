@@ -1,8 +1,12 @@
 import {userProjects} from "./userProjects";
 
 function displayProjects(){
+    const pageContent = document.querySelector("#mainPage")
     for(let i = 0; i < userProjects.length; i++){
-        console.log(userProjects[i].name);
+        
+        const projectName = document.createElement("h1");
+        projectName.textContent = `${userProjects[i].name}`
+        pageContent.appendChild(projectName);
       }
     };
 displayProjects()
