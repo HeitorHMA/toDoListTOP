@@ -5,9 +5,10 @@ function displayProjects(){
     const pageContent = document.querySelector("#projectDiv")
     for(let i = 0; i < userProjects.length; i++){
         
-        const projectDisplayDiv= document.createElement("h1");
+        const projectDisplayDiv= document.createElement("div");
         const projectName = userProjects[i].name;
-        projectName.textContent = "projectName";
+        projectDisplayDiv.classList.add("project-div")
+        projectDisplayDiv.innerHTML = `<input type = "checkbox" class="chckBox"/><h2><span class="usrTsk">${projectName}</span></h2><button class= "deletebtn">X</button>`;
         pageContent.appendChild(projectDisplayDiv);
       }
     };

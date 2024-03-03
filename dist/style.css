@@ -6,7 +6,7 @@ body{
 #mainGrid{
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 2fr 8fr;
     grid-template-rows: 9fr 1fr;
 }
 #navbarDiv{
@@ -36,4 +36,29 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.project-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size:16px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 75px;
+    min-width: 750px;
+}
+#projectDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
 }
