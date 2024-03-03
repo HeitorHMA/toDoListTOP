@@ -1,12 +1,3 @@
-import {userProjects} from "./userProjects";
+import loadMainPage from "./loadMainPage";
 
-function displayProjects(){
-    const pageContent = document.querySelector("#mainPage")
-    for(let i = 0; i < userProjects.length; i++){
-        
-        const projectName = document.createElement("h1");
-        projectName.textContent = `${userProjects[i].name}`
-        pageContent.appendChild(projectName);
-      }
-    };
-displayProjects()
+loadMainPage()
