@@ -10,7 +10,7 @@ function displayProjects(){
         const projectDisplayDiv= document.createElement("div");
         const projectName = userProjects[i].name;
         projectDisplayDiv.classList.add("project-div")
-        projectDisplayDiv.innerHTML = `<input type = "checkbox" class="chckBox"/><h2><span class="usrTsk">${projectName}</span></h2><button class= "deletebtn">X</button>`;
+        projectDisplayDiv.innerHTML = `<input type = "checkbox" class="chckBox" /><h2><span class="usrTsk">${projectName}</span></h2><button class= "deletebtn">X</button>`;
         pageContent.appendChild(projectDisplayDiv);
       }
     addCheckedClass()
