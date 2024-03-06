@@ -1,3 +1,4 @@
+import addCheckedClass from "./addCheckedClass";
 import {userProjects} from "./userProjects";
 
 
@@ -11,5 +12,6 @@ function displayProjects(){
         projectDisplayDiv.innerHTML = `<input type = "checkbox" class="chckBox"/><h2><span class="usrTsk">${projectName}</span></h2><button class= "deletebtn">X</button>`;
         pageContent.appendChild(projectDisplayDiv);
       }
+    addCheckedClass()
     };
 export default displayProjects 

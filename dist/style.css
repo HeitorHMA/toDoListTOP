@@ -62,3 +62,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+.checked{
+    text-decoration: line-through;
+    color:cornflowerblue;
+}
