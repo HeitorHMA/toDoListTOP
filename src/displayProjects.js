@@ -1,5 +1,6 @@
 
 import addCheckedClass from "./addCheckedClass";
+import removeButton from "./deleteButton";
 import {userProjects} from "./userProjects";
 
 
@@ -14,5 +15,6 @@ function displayProjects(){
         pageContent.appendChild(projectDisplayDiv);
       }
     addCheckedClass()
+    removeButton()
     };
 export default displayProjects 
